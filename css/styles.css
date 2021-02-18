@@ -15,6 +15,7 @@ body{
     background-color: white;
     display: flex;
     flex-direction: column;
+    align-content: space-between;
 }
 
 ul{
@@ -24,7 +25,7 @@ ul{
 .header{
     display: flex;
     align-items: center;  
-    height: 3.5rem;
+    flex-grow: 2;
     background-color: #4B4B4D;
 }
 
@@ -60,4 +61,81 @@ ul{
 
 .social-icons ul li:last-child{
     margin-right: .3rem;
+}
+
+/* Navbar
+***************************************/
+.navbar{
+    flex-grow: 1.5;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    margin-top: 1.5rem;
+}
+
+.navbar .menu{
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+}
+
+.navbar .menu div{
+    flex-grow: 2;
+    height: 100%;
+    margin: 0 auto;
+    background-color: #97989A;
+    border: 1px solid white;
+}
+
+/* Articles
+***************************************/
+.articles{
+    flex-grow: 10;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    margin-top: 1.5rem;
+}
+
+.article{
+    flex-grow: 1;
+    background-color: #97989A;
+    border: 1px solid white;
+}
+
+.article:nth-child(2){
+    border-left: .2rem solid white;
+    border-right: .2rem solid white;
+}
+
+/* Main Section
+***************************************/
+.main-section-container{
+    flex-grow: 12;
+    border: 1px solid green;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.left-bar{
+    border: 1px solid red;
+    flex-grow: 1;
+}
+
+.main-section{
+    border: 1px solid red;
+    flex-grow: 4;
+}
+
+.right-bar{
+    border: 1px solid red;
+    flex-grow: 1;
+}
+
+/* Footer
+***************************************/
+.footer{
+    flex-grow: 1;
+    border: 1px solid blue;
 }
