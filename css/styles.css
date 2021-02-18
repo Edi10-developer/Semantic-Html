@@ -1,18 +1,21 @@
+:root {
+    --white: rgba(204, 204, 204, 0.423);
+}
+
 *{
     margin: 0;
     padding: 0;
 }
 
 body{
-    background-color: azure;
+    background-color: var(--white);
 }
 
 .container{
-    border: 1px solid red;
     width: 1000px;
     height: 80vh;
     margin: 2rem auto;
-    background-color: white;
+    background-color: var(--white);
     display: flex;
     flex-direction: column;
     align-content: space-between;
@@ -84,7 +87,7 @@ ul{
     height: 100%;
     margin: 0 auto;
     background-color: #97989A;
-    border: 1px solid white;
+    border: 1px solid var(--white);
 }
 
 /* Articles
@@ -100,42 +103,43 @@ ul{
 .article{
     flex-grow: 1;
     background-color: #97989A;
-    border: 1px solid white;
+    border: 1px solid var(--white);
 }
 
 .article:nth-child(2){
-    border-left: .2rem solid white;
-    border-right: .2rem solid white;
+    border-left: .2rem solid var(--white);
+    border-right: .2rem solid var(--white);
 }
 
 /* Main Section
 ***************************************/
 .main-section-container{
     flex-grow: 12;
-    border: 1px solid green;
     display: flex;
     justify-content: center;
     align-items: stretch;
+    margin-top: 1.5rem;
 }
 
 .left-bar{
-    border: 1px solid red;
     flex-grow: 1;
+    background-color: #858688;
 }
 
 .main-section{
-    border: 1px solid red;
     flex-grow: 4;
+    background-color: #4B4B4D;
 }
 
 .right-bar{
-    border: 1px solid red;
     flex-grow: 1;
+    background-color: #858688;
 }
 
 /* Footer
 ***************************************/
 .footer{
-    flex-grow: 1;
-    border: 1px solid blue;
+    flex-grow: 2;
+    margin-top: 1.5rem;
+    background-color: #4B4B4D;
 }
