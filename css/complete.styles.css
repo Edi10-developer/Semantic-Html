@@ -41,8 +41,20 @@ ul{
 }
 
 .btn:hover{
-    background-color: rgba(75, 75, 77, .6);
+    background-color:rgba(49, 66, 212, 0.76);
+    color: #f9fbffbb !important;
 }
+
+a{
+    text-decoration: none;
+    transition: all 400ms;
+    color:white;
+}
+
+a:hover{
+    color: rgba(49, 66, 212, 0.76);
+}
+
 .header{
     display: flex;
     align-items: center;  
@@ -57,10 +69,16 @@ ul{
 }
 
 .logo-img{
-    height: 2rem;
+    height: 3rem;
     width: 10rem;
     margin-left: 2rem;
     background-color:#D2D3D5;
+    filter: grayscale(50%);
+}
+
+.logo-img img{
+    width: 100%;
+    height: 100%;
 }
 
 .social-icons{
@@ -72,12 +90,17 @@ ul{
     justify-content: flex-end;
 }
 
-.social-icons ul li div{
+.social-icons ul li i{
     width: 1.2rem;
     height: 1.2rem;
     border-radius: 50%;
-    background-color: #D2D3D5;
-    margin: .2rem;
+    margin: .5rem;
+    color:white;
+    transition: all 400ms;
+}
+
+.social-icons ul li i:hover{
+    color: rgba(49, 66, 212, 0.76);
 }
 
 .social-icons ul li:last-child{
@@ -106,12 +129,24 @@ ul{
     margin: 0 auto;
     background-color: #97989A;
     border: 1px solid var(--white);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 400ms;
+}
+
+.navbar .menu div:hover{
+    background-color: rgba(49, 66, 212, 0.76);
+}
+.navbar .menu div a{
+    color: white;
 }
 
 /* Articles
 ***************************************/
 .articles{
-    flex-grow: 10;
+    flex-grow: 20;
     display: flex;
     justify-content: center;
     align-items: stretch;
@@ -120,10 +155,18 @@ ul{
 
 .article{
     flex-grow: 1;
-    background-color: #97989A;
     border: 1px solid var(--white);
+    overflow: hidden;
 }
 
+.article div{
+    width: 100%;
+    height: 100%;
+    transition: all 400ms;
+}
+.article div:hover{
+    transform: scale(1.2)
+}
 .article:nth-child(2){
     border-left: .2rem solid var(--white);
     border-right: .2rem solid var(--white);
@@ -141,17 +184,81 @@ ul{
 
 .left-bar{
     flex-grow: 1;
-    background-color: #858688;
+    background-color: #bbc0ca;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
+.left-bar ul{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;   
+    justify-content: space-between;
+    text-align: center;
+}
+
+.left-bar ul li{
+   border: 1px solid white;
+   padding: .2rem;
+   background-color: #858688;
+   transition: all 300ms;
+}
+
+.left-bar ul li:hover{
+    background-color: rgba(49, 66, 212, 0.76);
+}
+.left-bar ul li a:hover{
+    color: white;
+}
 .main-section{
     flex-grow: 4;
     background-color: #4B4B4D;
+    overflow: hidden;
 }
 
+.main-section div{
+    width: 100%;
+    height: 100%;
+    transition: all 400ms;
+    background-position: center;
+    background-size: cover;
+    background-position-y: 30%;
+    background-repeat: no-repeat;
+}
+.main-section div:hover{
+    transform: scale(1.2)
+}
 .right-bar{
-    flex-grow: 1;
     background-color: #858688;
+    display: flex;
+    justify-content: center;
+    align-items:  center;
+    text-align: center;
+    overflow: hidden;
+}
+.right-bar ul{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;   
+    justify-content: space-between;
+    text-align: center;
+}
+
+.right-bar ul li{
+   border: 1px solid white;
+   padding: .2rem;
+   background-color: #858688;
+   transition: all 300ms;
+}
+
+.right-bar ul li:hover{
+    background-color: rgba(49, 66, 212, 0.76);
+}
+.right-bar ul li a:hover{
+    color: white;
 }
 
 /* Footer
