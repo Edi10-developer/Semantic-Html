@@ -1,34 +1,36 @@
+/* Font
+*****************************/
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap');
+
+/* Tipography
+*****************************/
 :root {
     --white: rgba(204, 204, 204, 0.423);
 }
-
 *{
     margin: 0;
     padding: 0;
 }
-
 body{
     background-color: var(--white);
+    font-family: 'Amatic SC', cursive;
 }
-
 .container{
     width: 90%;
-    height: 80vh;
     margin: 2rem auto;
     background-color: var(--white);
     display: flex;
     flex-direction: column;
     align-content: space-between;
 }
-
 ul{
     list-style-type: none;
 }
-
 .btn{
+    display: block;
     width: 9rem;
     height: 2rem;
-    margin: 2rem auto;
+    margin: .5rem auto;
     text-align: center;
     text-decoration: none;
     line-height: 1.8rem;
@@ -39,35 +41,32 @@ ul{
     border-radius: .2rem;
     transition: all 400ms;
 }
-
 .btn:hover{
     background-color:rgba(49, 66, 212, 0.76);
     color: #f9fbffbb !important;
 }
-
 a{
     text-decoration: none;
     transition: all 400ms;
     color:white;
 }
-
 a:hover{
     color: rgba(49, 66, 212, 0.76);
 }
 
+/* Header
+*****************************/
 .header{
     display: flex;
     align-items: center;  
     flex-grow: 2;
     background-color: #4B4B4D;
 }
-
 #logo{
     flex-grow: 6;
     display: flex;
     align-content: space-around;
 }
-
 .logo-img{
     height: 3rem;
     width: 10rem;
@@ -75,21 +74,17 @@ a:hover{
     background-color:#D2D3D5;
     filter: grayscale(50%);
 }
-
 .logo-img img{
     width: 100%;
     height: 100%;
 }
-
 .social-icons{
     flex-grow: 2;
 }
-
 .social-icons ul{
     display: flex;
     justify-content: flex-end;
 }
-
 .social-icons ul li i{
     width: 1.2rem;
     height: 1.2rem;
@@ -98,11 +93,9 @@ a:hover{
     color:white;
     transition: all 400ms;
 }
-
 .social-icons ul li i:hover{
     color: rgba(49, 66, 212, 0.76);
 }
-
 .social-icons ul li:last-child{
     margin-right: .3rem;
 }
@@ -116,13 +109,11 @@ a:hover{
     align-items: stretch;
     margin-top: 1.5rem;
 }
-
 .navbar .menu{
     flex-grow: 1;
     display: flex;
     align-items: center;
 }
-
 .navbar .menu div{
     flex-grow: 2;
     height: 100%;
@@ -135,7 +126,6 @@ a:hover{
     align-items: center;
     transition: all 400ms;
 }
-
 .navbar .menu div:hover{
     background-color: rgba(49, 66, 212, 0.76);
 }
@@ -152,13 +142,12 @@ a:hover{
     align-items: stretch;
     margin-top: 1.5rem;
 }
-
 .article{
     flex-grow: 1;
+    height: 7rem;
     border: 1px solid var(--white);
     overflow: hidden;
 }
-
 .article div{
     width: 100%;
     height: 100%;
@@ -176,12 +165,12 @@ a:hover{
 ***************************************/
 .main-section-container{
     flex-grow: 12;
+    height: 16rem;
     display: flex;
     justify-content: center;
     align-items: stretch;
     margin-top: 1.5rem;
 }
-
 .left-bar{
     flex-grow: 1;
     background-color: #bbc0ca;
@@ -189,23 +178,23 @@ a:hover{
     justify-content: center;
     align-items: center;
 }
-
 .left-bar ul{
     height: 100%;
     width: 100%;
     display: flex;
     flex-direction: column;   
-    justify-content: space-between;
+    justify-content: center;
     text-align: center;
 }
-
 .left-bar ul li{
+   flex-grow: 1;
    border: 1px solid white;
-   padding: .2rem;
+   display: flex;
+   justify-content: center;
+   align-items: center;
    background-color: #858688;
    transition: all 300ms;
 }
-
 .left-bar ul li:hover{
     background-color: rgba(49, 66, 212, 0.76);
 }
@@ -217,7 +206,6 @@ a:hover{
     background-color: #4B4B4D;
     overflow: hidden;
 }
-
 .main-section div{
     width: 100%;
     height: 100%;
@@ -231,12 +219,13 @@ a:hover{
     transform: scale(1.2)
 }
 .right-bar{
-    background-color: #858688;
+    width: 23%;
     display: flex;
     justify-content: center;
     align-items:  center;
     text-align: center;
     overflow: hidden;
+    background-color: #bbc0ca;
 }
 .right-bar ul{
     height: 100%;
@@ -246,14 +235,15 @@ a:hover{
     justify-content: space-between;
     text-align: center;
 }
-
 .right-bar ul li{
-   border: 1px solid white;
-   padding: .2rem;
-   background-color: #858688;
-   transition: all 300ms;
+    flex-grow: 1;
+    border: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #858688;
+    transition: all 300ms;
 }
-
 .right-bar ul li:hover{
     background-color: rgba(49, 66, 212, 0.76);
 }
@@ -266,5 +256,30 @@ a:hover{
 .footer{
     flex-grow: 2;
     margin-top: 1.5rem;
+    height: 1.2rem;
     background-color: #4B4B4D;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: rgba(204, 204, 204, 0.595);
+}
+#developer{
+    color: #F77C4D;
+}
+
+/*  Mobile View
+************************************/
+@media(max-width: 481px){
+    .articles{
+        display: flex;
+        flex-direction: column;
+        height: 15rem;
+    }
+    .article:nth-child(2){
+        border: none;
+        border-top: .2rem solid var(--white);
+        border-bottom: .2rem solid var(--white);
+    }
 }
